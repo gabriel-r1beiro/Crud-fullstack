@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.modalBlur {
+    backdrop-filter: blur(10px);
+    background-color: rgba(182, 178, 178, 0.267);
+}

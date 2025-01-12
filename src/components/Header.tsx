@@ -1,6 +1,9 @@
-import { IoSearch } from "react-icons/io5";
+import { IoSearch } from 'react-icons/io5'
 
-export const Header = () => {
+interface HeaderProps {
+  handleOpen: () => void
+}
+export const Header = ({ handleOpen }: HeaderProps) => {
   return (
     <header className="w-full h-20 rounded-t flex items-center justify-around bg-gray-700 p-2">
       <div className="flex items-center justify-center">
@@ -19,9 +22,10 @@ export const Header = () => {
       <button
         className="bg-green-600 hover:bg-green-700 px-6 py-1 rounded "
         type="button"
+        onClick={handleOpen}
       >
         Add New Item
       </button>
     </header>
-  );
-};
+  )
+}
